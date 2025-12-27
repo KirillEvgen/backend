@@ -1,7 +1,7 @@
 /**
  * Возвращает приветственное сообщение с именем
- * @param {string} name - имя для приветствия
- * @returns {string} - строка "Hello, <name>"
+ * @param {string} name -
+ * @returns {string} 
  */
 function getHelloMessage(name) {
     return `Hello, ${name}`;
