@@ -7,6 +7,7 @@ const { getHelloMessage } = require('./modules/hello-modules');
 const HOST = '127.0.0.1';
 const PORT = process.env.PORT || 3003;
 
+
 const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url, true);
     const query = parsedUrl.query;
@@ -16,7 +17,7 @@ const server = http.createServer((req, res) => {
     if (queryKeys.length === 0) {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-        res.end('Hello, World!');
+        res.end('Hello World!');
         return;
     }
 
